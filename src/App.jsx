@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Menu from './components/Menu';
+import { GameStateContext } from './assets/helpers/Contexts';
 import './App.css';
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <h1>Quizz App</h1>
-      {gameState === 'menu' && <Menu />}
+      <GameStateContext.Provider value={{ gameState, setGameState }}>
+        {gameState === 'menu' && <Menu />}
+      </GameStateContext.Provider>
     </div>
   );
 }
