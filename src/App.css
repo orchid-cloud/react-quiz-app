@@ -47,3 +47,12 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
+.Menu,
+.Quiz h1 {
+  color: white;
+}
+
+.btn-clicked {
+  border: 1px solid lightblue;
+}
