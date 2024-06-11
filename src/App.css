@@ -51,7 +51,8 @@ button:hover {
 
 .Menu,
 .Quiz h1,
-.EndScreen h2 {
+.EndScreen h2,
+.EndScreen h3 {
   color: white;
 }
 
